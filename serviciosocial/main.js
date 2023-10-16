@@ -3237,7 +3237,7 @@ const environment = {
     production: false,
     // urlG : 'http://localhost:8083'
     //  urlG : 'http://52.90.201.74:8083'
-    urlG: 'http://karenlpz2023.me:8083'
+    urlG: 'https://karenlpz2023.me:8083'
 };
 
 
