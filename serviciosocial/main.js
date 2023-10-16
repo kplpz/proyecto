@@ -3236,7 +3236,7 @@ __webpack_require__.r(__webpack_exports__);
 const environment = {
     production: false,
     // urlG : 'http://localhost:8083'
-    urlG: 'https://karenlpz2023.me'
+    urlG: 'https://karenlpz2023.me:8083'
 };
 
 
