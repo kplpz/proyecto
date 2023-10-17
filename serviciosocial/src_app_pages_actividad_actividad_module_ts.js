@@ -1279,9 +1279,9 @@ class ListaDetalleActividadComponent {
                                     this.formDetalleActividad.get('estado').setValue('Ejecucion');
                                     //this.myTimeIni=new Date();
                                     //guardando en tabla ejecucion
+                                    this.reload();
                                     this.guardarEjecucion();
                                     sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().fire('Éxito', 'Almacenado correctamente', 'success');
-                                    this.reload();
                                 }, (err) => {
                                     //consoleerro
                                     sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().fire('Ocurrio un problema', '', 'warning');
@@ -1340,13 +1340,13 @@ class ListaDetalleActividadComponent {
                                     if (this.resultadoConfirmacion[0].coinciden == "VERDADERO") {
                                         this.estado = new _models_actividad__WEBPACK_IMPORTED_MODULE_0__.ActividadEstado("Inactivo");
                                         this.actiEstadoService.editarEstadoAct(this.idActividad, this.estado).subscribe((r) => {
+                                            this.reload();
                                         });
                                     }
                                     else {
                                         this.estado = null;
                                     }
                                 });
-                                this.reload();
                             }, (err) => {
                                 //consoleerro
                                 sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().fire('Ocurrio un problema', '', 'warning');
@@ -1373,13 +1373,13 @@ class ListaDetalleActividadComponent {
                             if (this.resultadoConfirmacion[0].coinciden == "VERDADERO") {
                                 this.estado = new _models_actividad__WEBPACK_IMPORTED_MODULE_0__.ActividadEstado("Inactivo");
                                 this.actiEstadoService.editarEstadoAct(this.idActividad, this.estado).subscribe((r) => {
+                                    this.reload();
                                 });
                             }
                             else {
                                 this.estado = null;
                             }
                         });
-                        this.reload();
                     }, (err) => {
                         //consoleerro
                         sweetalert2__WEBPACK_IMPORTED_MODULE_3___default().fire('Ocurrio un problema', '', 'warning');

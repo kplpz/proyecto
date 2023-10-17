@@ -725,12 +725,11 @@ class ResetComponent {
             if (password == confirm) {
                 this.usuario.password = confirm;
                 this.usuarioService.editarContraseña(this.usuario).subscribe(resp => {
-                    console.log(resp);
-                    // this.cred.correo=this.usuario.correo
-                    // this.cred.password=password
-                    // this.authService.login(this.cred).subscribe(resp=>{
-                    //   Swal.fire('Éxito', 'Contraseña modificada correctamente', 'success');
-                    // })
+                    this.cred.correo = this.usuario.correo;
+                    this.cred.password = password;
+                    this.authService.login(this.cred).subscribe(resp => {
+                        sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire('Éxito', 'Contraseña modificada correctamente', 'success');
+                    });
                 }, (err) => {
                     sweetalert2__WEBPACK_IMPORTED_MODULE_0___default().fire({
                         title: 'Error',
