@@ -2457,7 +2457,7 @@ const environment = {
     // urlG : 'https://uti.fmp.ues.edu.sv/serviciosocial'
     // urlG : 'http://localhost:8083/serviciosocial'
     // urlG : 'https://despliguecontinuo2023.me/serviciosocial'
-    urlG: 'https://karenlpz2023.me/serviciosocial'
+    urlG: 'https://karenlpz2023.me:8083/serviciosocial'
 };
 
 
